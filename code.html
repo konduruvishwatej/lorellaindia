@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&amp;family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      "colors": {
+        "surface": "#fcf9f2",
+        "surface-dim": "#dcdad3",
+        "surface-bright": "#fcf9f2",
+        "surface-container-lowest": "#ffffff",
+        "surface-container-low": "#f6f3ec",
+        "surface-container": "#f0eee7",
+        "surface-container-high": "#ebe8e1",
+        "surface-container-highest": "#e5e2db",
+        "on-surface": "#1c1c18",
+        "on-surface-variant": "#584140",
+        "outline": "#8b716f",
+        "outline-variant": "#dfbfbd",
+        "primary": "#8c1d24",
+        "primary-container": "#ffdad8",
+        "on-primary": "#ffffff",
+        "on-primary-container": "#410006",
+        "secondary": "#7a5826",
+        "secondary-container": "#fecf93",
+        "on-secondary": "#ffffff",
+        "on-secondary-container": "#291800",
+        "tertiary": "#17382c",
+        "tertiary-container": "#c6ebd9",
+        "on-tertiary": "#ffffff",
+        "on-tertiary-container": "#002116",
+        "background": "#fcf9f2",
+        "on-background": "#1c1c18"
+      },
+      "fontFamily": {
+        "headline-xl": ["EB Garamond", "serif"],
+        "headline-lg": ["EB Garamond", "serif"],
+        "headline-md": ["EB Garamond", "serif"],
+        "headline-sm": ["EB Garamond", "serif"],
+        "body-lg": ["Newsreader", "serif"],
+        "body-md": ["Newsreader", "serif"],
+        "body-sm": ["Newsreader", "serif"],
+        "label-lg": ["Plus Jakarta Sans", "sans-serif"],
+        "label-md": ["Plus Jakarta Sans", "sans-serif"],
+        "label-sm": ["Plus Jakarta Sans", "sans-serif"],
+        "label-caps": ["Plus Jakarta Sans", "sans-serif"]
+      },
+      "fontSize": {
+        "headline-xl": ["3.5rem", { "lineHeight": "4rem", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+        "headline-lg": ["2.5rem", { "lineHeight": "3rem", "letterSpacing": "-0.005em", "fontWeight": "500" }],
+        "headline-md": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "0em", "fontWeight": "500" }],
+        "headline-sm": ["1.375rem", { "lineHeight": "1.875rem", "letterSpacing": "0.01em", "fontWeight": "600" }],
+        "body-lg": ["1.1875rem", { "lineHeight": "1.9rem", "letterSpacing": "0.01em", "fontWeight": "400" }],
+        "body-md": ["1rem", { "lineHeight": "1.65rem", "letterSpacing": "0.01em", "fontWeight": "400" }],
+        "body-sm": ["0.875rem", { "lineHeight": "1.45rem", "letterSpacing": "0.015em", "fontWeight": "400" }],
+        "label-md": ["0.8125rem", { "lineHeight": "1.125rem", "letterSpacing": "0.14em", "fontWeight": "600" }],
+        "label-sm": ["0.6875rem", { "lineHeight": "0.95rem", "letterSpacing": "0.22em", "fontWeight": "600" }]
+      }
+    }
+  }
+};</script></head><body class="bg-[#fcf9f2] font-body-md text-[#1c1c18] antialiased selection:bg-[#8c1d24]/15 selection:text-[#8c1d24]"><header class="fixed top-0 left-0 right-0 z-50 bg-[#fcf9f2]/95 backdrop-blur-md border-b border-[#8c1d24]/15"><div class="h-20 max-w-[1200px] mx-auto px-6 md:px-12 flex items-center justify-between"><div class="flex items-center gap-4"><a class="flex items-center gap-3.5 group cursor-pointer" href="#"><img alt="Lorella Speciality Café Emblem" class="h-12 w-auto object-contain transition-transform group-hover:scale-105 duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZmBDCMV2rSgb4FIfYtKXhWx1adm4Z03N7rv1euazRD1xBYUceT3imNgBkQKRoFHs-TfQVhSAyJxYi8BNbtuwmqgk-Zr_exAl4BtmP0bRM7AYuG2Pdqu3uQ8hZwAM2L_QN5dahY4ltEil1R115hPXI0vZMvA9mzhvaaeeNE7q5kPodGAz-G7LItMYndBgmjHUIHKD41PsSq7yQuU-qNlbeg16LzV3r-IDmw3UCp2PhAEs10DSWzAis"/><div class="flex flex-col"><span class="font-headline-md text-headline-sm uppercase tracking-widest text-[#8c1d24] font-semibold">Lorella</span><span class="font-label-sm text-[10px] uppercase tracking-[0.24em] text-[#7a5826] -mt-0.5">Literary Café • Founded 1924</span></div></a></div><nav class="hidden md:flex items-center gap-8" data-active-classes="text-[#8c1d24] border-b-2 border-[#8c1d24]"><a aria-current="page" class="font-label-md uppercase tracking-[0.16em] pb-1 transition-colors text-[#8c1d24] border-b-2 border-[#8c1d24]" data-path="carte-des-boissons" href="#menu">Menu</a><a class="font-label-md text-label-md uppercase tracking-[0.16em] text-[#584140] hover:text-[#8c1d24] pb-1 transition-colors" data-path="gazette-litteraire" href="#">The Gazette</a><a class="font-label-md text-label-md uppercase tracking-[0.16em] text-[#584140] hover:text-[#8c1d24] pb-1 transition-colors" data-path="salons-et-soirees" href="#">Salons &amp; Events</a><a class="font-label-md text-label-md uppercase tracking-[0.16em] text-[#584140] hover:text-[#8c1d24] pb-1 transition-colors" data-path="histoire-et-maison" href="#">Our House</a><button class="font-label-md text-label-md uppercase tracking-[0.16em] text-[#8c1d24] hover:text-[#6b0110] pb-1 transition-colors cursor-pointer border-b border-transparent hover:border-[#8c1d24] font-medium" data-path="table-reservation" id="openReservationNavBtn" type="button">Reservations</button></nav><div class="flex items-center gap-3.5"><a class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#8c1d24]/8 hover:bg-[#8c1d24]/15 border border-[#8c1d24]/20 text-[#8c1d24] transition-all duration-200 group text-xs font-label-md tracking-wider" href="https://www.instagram.com/lorella.india" rel="noopener noreferrer" target="_blank" title="Follow @lorella.india on Instagram"><svg class="w-4 h-4 fill-current transition-transform group-hover:scale-110 duration-200 shrink-0" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg><span class="hidden sm:inline font-semibold">@lorella.india</span></a><div class="w-9 h-9 rounded-full bg-[#8c1d24]/10 border border-[#8c1d24]/20 flex items-center justify-center text-[#8c1d24] shadow-xs"><span class="material-symbols-outlined text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-[#fcf9f2] min-h-[calc(100vh-5rem)]"><div class="flex flex-col w-full">
+<div class="max-w-[760px] mx-auto w-full px-6 py-16 md:py-24 flex flex-col items-center text-center">
+<!-- SECTION 1: HERO -->
+<section class="w-full flex flex-col items-center">
+<div class="mb-6 flex items-center justify-center">
+<div class="relative p-2 bg-[#fcf9f2] rounded-full">
+<img alt="Lorella Speciality Café Emblem" class="w-48 md:w-56 h-auto object-contain drop-shadow-xs transition-transform hover:scale-102 duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZmBDCMV2rSgb4FIfYtKXhWx1adm4Z03N7rv1euazRD1xBYUceT3imNgBkQKRoFHs-TfQVhSAyJxYi8BNbtuwmqgk-Zr_exAl4BtmP0bRM7AYuG2Pdqu3uQ8hZwAM2L_QN5dahY4ltEil1R115hPXI0vZMvA9mzhvaaeeNE7q5kPodGAz-G7LItMYndBgmjHUIHKD41PsSq7yQuU-qNlbeg16LzV3r-IDmw3UCp2PhAEs10DSWzAis"/>
+</div>
+</div>
+<h1 class="font-headline-xl text-[2.75rem] md:text-headline-xl text-[#8c1d24] tracking-tight mb-2.5 font-normal">
+        Lorella Speciality Café
+      </h1>
+<div class="flex items-center gap-2 mb-5">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 bg-[#f0eee7] border border-[#8c1d24]/20 rounded-full font-label-sm text-label-sm uppercase tracking-[0.2em] text-[#8c1d24] font-semibold">
+          ★ 4.4 · 23 Reviews
+        </span>
+</div>
+<p class="font-body-lg text-body-lg text-[#584140] italic max-w-lg mb-8 leading-relaxed font-normal">
+        “A quiet sanctuary for slow coffee and timeless conversation.”
+      </p>
+<!-- Typographic Ornamental Hairline Divider -->
+<div class="w-full flex items-center justify-center gap-4 my-2">
+<div class="h-[1px] bg-[#8c1d24]/25 flex-1 max-w-[130px]"></div>
+<span class="text-[#8c1d24] text-sm tracking-widest select-none">✦ ❦ ✦</span>
+<div class="h-[1px] bg-[#8c1d24]/25 flex-1 max-w-[130px]"></div>
+</div>
+</section>
+<!-- SECTION 2: OUR HOUSE -->
+<section class="w-full flex flex-col items-center mt-16 mb-16">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.25em] text-[#7a5826] mb-3 font-semibold">
+        Our House
+      </span>
+<p class="font-headline-md text-headline-sm md:text-headline-md text-[#1c1c18] max-w-xl leading-relaxed text-center font-normal">
+        Rooted in the quiet grace of Viennese coffeehouse tradition, Lorella offers single-origin pour-overs, artisanal roasts, and quiet stillness amidst the bustle of Hyderabad.
+      </p>
+</section>
+<!-- SECTION 3: MENU -->
+<section class="w-full flex flex-col items-center mt-4 mb-20 scroll-mt-24" id="menu">
+<div class="w-full flex items-center justify-center gap-4 mb-3">
+<div class="h-[1px] bg-[#8c1d24]/20 flex-1"></div>
+<span class="text-[#8c1d24] text-xs tracking-widest select-none">♦ ❦ ♦</span>
+<div class="h-[1px] bg-[#8c1d24]/20 flex-1"></div>
+</div>
+<div class="text-center mb-8">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.25em] text-[#7a5826] font-semibold block mb-1.5">La Carte des Délices &amp; Boissons</span>
+<h2 class="font-headline-md text-headline-md text-[#8c1d24] tracking-wide font-normal">Café &amp; Dining Menu</h2>
+<p class="font-body-sm text-body-sm text-[#584140] italic mt-1 max-w-md mx-auto">Artisanal extractions, salon confectionery, gourmet sandwiches, and handcrafted fare prepared fresh daily.</p>
+</div>
+<!-- Keyword Search Bar -->
+<div class="w-full max-w-lg mb-6 relative">
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-4 text-[#8c1d24]/70 text-[20px] pointer-events-none select-none">search</span>
+<input autocomplete="off" class="w-full bg-[#ffffff] border border-[#8c1d24]/25 hover:border-[#8c1d24]/50 focus:border-[#8c1d24] focus:ring-1 focus:ring-[#8c1d24] text-[#1c1c18] font-body-sm placeholder:italic placeholder:text-[#584140]/60 pl-11 pr-10 py-2.5 rounded-full shadow-[0_1px_4px_rgba(140,29,36,0.04)] outline-none transition-all duration-200" id="menuSearchInput" placeholder="Search menu by keyword (e.g. Cinnamon, Pizza, French Toast, Brioche)..." type="text"/>
+<button aria-label="Clear search" class="hidden absolute right-3.5 text-[#584140] hover:text-[#8c1d24] p-1 rounded-full hover:bg-[#8c1d24]/10 transition-colors cursor-pointer" id="clearSearchBtn" title="Clear search" type="button">
+<span class="material-symbols-outlined text-[16px] block">close</span>
+</button>
+</div>
+</div>
+<!-- Interactive Menu Filter Tabs -->
+<div class="w-full max-w-2xl mb-10 flex items-center justify-center">
+<div aria-label="Menu categories" class="inline-flex flex-wrap items-center justify-center p-1 bg-[#f0eee7] border border-[#8c1d24]/20 rounded-full shadow-inner gap-1" role="tablist">
+<button aria-selected="true" class="menu-filter-tab px-3.5 md:px-4 py-1.5 rounded-full font-label-md text-xs uppercase tracking-[0.14em] font-medium transition-all duration-300 bg-[#8c1d24] text-[#ffffff] shadow-sm" data-filter="all" role="tab" type="button">
+        All
+      </button>
+<button aria-selected="false" class="menu-filter-tab px-3.5 md:px-4 py-1.5 rounded-full font-label-md text-xs uppercase tracking-[0.14em] font-medium transition-all duration-300 text-[#584140] hover:text-[#8c1d24] hover:bg-[#8c1d24]/5" data-filter="drinks" role="tab" type="button">
+        Coffee &amp; Drinks
+      </button>
+<button aria-selected="false" class="menu-filter-tab px-3.5 md:px-4 py-1.5 rounded-full font-label-md text-xs uppercase tracking-[0.14em] font-medium transition-all duration-300 text-[#584140] hover:text-[#8c1d24] hover:bg-[#8c1d24]/5" data-filter="mains" role="tab" type="button">
+        Mains &amp; Sandwiches
+      </button>
+<button aria-selected="false" class="menu-filter-tab px-3.5 md:px-4 py-1.5 rounded-full font-label-md text-xs uppercase tracking-[0.14em] font-medium transition-all duration-300 text-[#584140] hover:text-[#8c1d24] hover:bg-[#8c1d24]/5" data-filter="appetizers" role="tab" type="button">
+        Appetizers &amp; Sides
+      </button>
+<button aria-selected="false" class="menu-filter-tab px-3.5 md:px-4 py-1.5 rounded-full font-label-md text-xs uppercase tracking-[0.14em] font-medium transition-all duration-300 text-[#584140] hover:text-[#8c1d24] hover:bg-[#8c1d24]/5" data-filter="sweets" role="tab" type="button">
+        Brunch &amp; Sweet Treats
+      </button>
+</div>
+</div>
+<div class="w-full flex flex-col gap-12 text-left" id="menuSectionsContainer">
+<!-- Category 1: Coffee & Drinks -->
+<div class="w-full menu-category-section transition-opacity duration-300" data-category="drinks">
+<div class="flex items-center gap-3 pb-2.5 mb-6 border-b border-[#8c1d24]/20 menu-category-header">
+<span class="material-symbols-outlined text-[18px] text-[#8c1d24]">coffee</span>
+<h3 class="font-headline-sm text-headline-sm text-[#8c1d24] tracking-wide font-medium">Coffee &amp; Drinks</h3>
+</div>
+<div class="flex flex-col gap-4">
+<div class="menu-item-card bg-[#ffffff] border border-[#8c1d24]/20 p-5 md:p-6 rounded-sm shadow-[0_2px_8px_rgba(140,29,36,0.04)] hover:border-[#8c1d24]/50 transition-all hover:shadow-[0_4px_16px_rgba(140,29,36,0.08)] flex flex-col">
+<div class="flex items-baseline justify-between gap-4">
+<span class="menu-item-title font-headline-sm text-headline-sm text-[#8c1d24] tracking-wide font-medium leading-tight">Apple Cinnamon Coffee</span>
+</div>
+<p class="menu-item-desc font-body-sm text-body-sm text-[#584140] italic mt-2.5 leading-relaxed block">Warm aromatic espresso extraction infused with spiced apple compote and Ceylon cinnamon</p>
+</div>
+<div class="menu-item-card bg-[#ffffff] border border-[#8c1d24]/20 p-5 md:p-6 rounded-sm shadow-[0_2px_8px_rgba(140,29,36,0.04)] hover:border-[#8c1d24]/50 transition-all hover:shadow-[0_4px_16px_rgba(140,29,36,0.08)] flex flex-col">
+<div class="flex items-baseline justify-between gap-4">
+<span class="menu-item-title font-headline-sm text-headline-sm text-[#8c1d24] tracking-wide font-medium leading-tight">Vietnamese Coffee</span>
+</div>
+<p class="menu-item-desc font-body-sm text-body-sm text-[#584140] italic mt-2.5 leading-relaxed block">Traditional slow drip phin filter coffee layered over sweetened condensed milk</p>
+</div>
+<div class="menu-item-card bg-[#ffffff] border border-[#8c1d24]/20 p-5 md:p-6 rounded-sm shadow-[0_2px_8px_rgba(140,29,36,0.04)] hover:border-[#8c1d24]/50 transition-all hover:shadow-[0_4px_16px_rgba(140,29,36,0.08)] flex flex-col">
+<div class="flex items-baseline justify-between gap-4">
+<span class="menu-item-title font-headline-sm text-headline-sm text-[#8c1d24] tracking-wide font-medium leading-tight">Hazelnut Ice Coffee</span>
+</div>
+<p class="menu-item-desc font-body-sm text-body-sm text-[#584140] italic mt-2.5 leading-relaxed block">Chilled double shot espresso blended over velvety milk and roasted hazelnut syrup</p>
+</div>
+<div class="menu-item-card bg-[#ffffff] border border-[#8c1d24]/20 p-5 md:p-6 rounded-sm shadow-[0_2px_8px_rgba(140,29,36,0.04)] hover:border-[#8c1d24]/50 transition-all hover:shadow-[0_4px_16px_rgba(140,29,36,0.08)] flex flex-col">
+<div class="flex items-baseline justify-between gap-4">
+<span class="menu-item-title font-headline-sm text-headline-sm text-[#8c1d24] tracking-wide font-medium leading-tight">Hot Chocolate</span>
+</div>
+<p class="menu-item-desc font-body-sm text-body-sm text-[#584140] italic mt-2.5 leading-relaxed block">Rich melted single-origin dark cocoa with steamed velvety whole milk</p>
+</div>
+<div class="menu-item-card bg-[#ffffff] border border-[#8c1d24]/20 p-5 md:p-6 rounded-sm shadow-[0_2px_8px_rgba(140,29,36,0.04)] hover:border-[#8c1d24]/50 transition-all hover:shadow-[0_4px_16px_rgba(140,29,36,0.08)] flex flex-col">
+<div class="flex items-baseline justify-between gap-4">
+<span class="menu-item-title font-headline-sm text-headline-sm text-[#8c1d24] tracking-wide font-medium leading-tight">Seasonal Strawberry Drinks &amp; Hot Chocolate</span>
+</div>
+<p class="menu-item-desc font-body-sm text-body-sm text-[#584140] italic mt-2.5 leading-relaxed block">Winter seasonal special: fresh Mahabaleshwar strawberry coulis paired with artisanal iced brews and strawberry hot chocolate</p>
+</div>
+<div class="menu-item-card bg-[#ffffff] border border-[#8c1d24]/20 p-5 md:p-6 rounded-sm shadow-[0_2px_8px_rgba(140,29,36,0.04)] hover:border-[#8c1d24]/50 transition-all hover:shadow-[0_4px_16px_rgba(140,29,36,0.08)] flex flex-col">
+<div class="flex items-baseline justify-between gap-4">
+<span class="menu-item-title font-headline-sm text-headline-sm text-[#8c1d24] tracking-wide font-medium leading-tight">Blue Mojito</span>
+</div>
+<p class="menu-item-desc font-body-sm text-body-sm text-[#584140] italic mt-2.5 leading-relaxed block">Sparkling refresher with blue curaçao notes, crushed garden mint, fresh lime, and mineral soda</p>
+</div>
+</div>
+</div>
+<!-- Category 2: Mains & Sandwiches -->
+<div class="w-full menu-category-section transition-opacity duration-300" data-category="mains">
+<div class="flex items-center gap-3 pb-2.5 mb-6 border-b border-[#8c1d24]/20 menu-category-header">
+<span class="material-symbols-outlined text-[18px] text-[#8c1d24]">lunch_dining</span>
+<h3 class="font-headline-sm text-headline-sm text-[#8c1d24] tracking-wide font-medium">Mains &amp; Sandwiches</h3>
+</div>
+<div class="flex flex-col gap-4">
+<div class="menu-item-card bg-[#ffffff] border border-[#8c1d24]/20 p-5 md:p-6 rounded-sm shadow-[0_2px_8px_rgba(140,29,36,0.04)] hover:border-[#8c1d24]/50 transition-all hover:shadow-[0_4px_16px_rgba(140,29,36,0.08)] flex flex-col">
+<div class="flex items-baseline justify-between gap-4">
+<span class="menu-item-title font-headline-sm text-headline-sm text-[#8c1d24] tracking-wide font-medium leading-tight">Puff Crust Kheema Pizza</span>
+</div>
+<p class="menu-item-desc font-body-sm text-body-sm text-[#584140] italic mt-2.5 leading-relaxed block">Signature 30+ flaky golden layers with spiced minced meat filling, roasted aromatics, and melted artisanal cheese</p>
+</div>
+<div class="menu-item-card bg-[#ffffff] border border-[#8c1d24]/20 p-5 md:p-6 rounded-sm shadow-[0_2px_8px_rgba(140,29,36,0.04)] hover:border-[#8c1d24]/50 transition-all hover:shadow-[0_4px_16px_rgba(140,29,36,0.08)] flex flex-col">
+<div class="flex items-baseline justify-between gap-4">
+<span class="menu-item-title font-headline-sm text-headline-sm text-[#8c1d24] tracking-wide font-medium leading-tight">Farm Fresh Pizza with Puff Base</span>
+</div>
+<p class="menu-item-desc font-body-sm text-body-sm text-[#584140] italic mt-2.5 leading-relaxed block">Flaky mille-feuille puff crust topped with garden-fresh bell peppers, heirloom tomatoes, basil, and mozzarella</p>
+</div>
+<div class="menu-item-card bg-[#ffffff] border border-[#8c1d24]/20 p-5 md:p-6 rounded-sm shadow-[0_2px_8px_rgba(140,29,36,0.04)] hover:border-[#8c1d24]/50 transition-all hover:shadow-[0_4px_16px_rgba(140,29,36,0.08)] flex flex-col">
+<div class="flex items-baseline justify-between gap-4">
+<span class="menu-item-title font-headline-sm text-headline-sm text-[#8c1d24] tracking-wide font-medium leading-tight">Paneer Pizza</span>
+</div>
+<p class="menu-item-desc font-body-sm text-body-sm text-[#584140] italic mt-2.5 leading-relaxed block">Crisp puff crust layered with marinated spiced paneer cubes, roasted peppers, and herb-infused cheese blend</p>
+</div>
+<div class="menu-item-card bg-[#ffffff] border border-[#8c1d24]/20 p-5 md:p-6 rounded-sm shadow-[0_2px_8px_rgba(140,29,36,0.04)] hover:border-[#8c1d24]/50 transition-all hover:shadow-[0_4px_16px_rgba(140,29,36,0.08)] flex flex-col">
+<div class="flex items-baseline justify-between gap-4">
+<span class="menu-item-title font-headline-sm text-headline-sm text-[#8c1d24] tracking-wide font-medium leading-tight">Chicken Club Sando</span>
+</div>
+<p class="menu-item-desc font-body-sm text-body-sm text-[#584140] italic mt-2.5 leading-relaxed block">Triple-decker toasted brioche layered with herb-roasted chicken, farm egg, lettuce, and house grain mustard aioli</p>
+</div>
+<div class="menu-item-card bg-[#ffffff] border border-[#8c1d24]/20 p-5 md:p-6 rounded-sm shadow-[0_2px_8px_rgba(140,29,36,0.04)] hover:border-[#8c1d24]/50 transition-all hover:shadow-[0_4px_16px_rgba(140,29,36,0.08)] flex flex-col">
+<div class="flex items-baseline justify-between gap-4">
+<span class="menu-item-title font-headline-sm text-headline-sm text-[#8c1d24] tracking-wide font-medium leading-tight">Grilled Sandwich</span>
+</div>
+<p class="menu-item-desc font-body-sm text-body-sm text-[#584140] italic mt-2.5 leading-relaxed block">Artisanal sourdough toasted to golden perfection with heritage cheese blend and roasted garden greens</p>
+</div>
+<div class="menu-item-card bg-[#ffffff] border border-[#8c1d24]/20 p-5 md:p-6 rounded-sm shadow-[0_2px_8px_rgba(140,29,36,0.04)] hover:border-[#8c1d24]/50 transition-all hover:shadow-[0_4px_16px_rgba(140,29,36,0.08)] flex flex-col">
+<div class="flex items-baseline justify-between gap-4">
+<span class="menu-item-title font-headline-sm text-headline-sm text-[#8c1d24] tracking-wide font-medium leading-tight">Kheema Burger</span>
+</div>
+<p class="menu-item-desc font-body-sm text-body-sm text-[#584140] italic mt-2.5 leading-relaxed block">Juicy spiced kheema patty served in a toasted brioche bun with pickled onions, crisp lettuce, and mint yogurt dressing</p>
+</div>
+<div class="menu-item-card bg-[#ffffff] border border-[#8c1d24]/20 p-5 md:p-6 rounded-sm shadow-[0_2px_8px_rgba(140,29,36,0.04)] hover:border-[#8c1d24]/50 transition-all hover:shadow-[0_4px_16px_rgba(140,29,36,0.08)] flex flex-col">
+<div class="flex items-baseline justify-between gap-4">
+<span class="menu-item-title font-headline-sm text-headline-sm text-[#8c1d24] tracking-wide font-medium leading-tight">Alfredo Pasta (Veg / Chicken)</span>
+</div>
+<p class="menu-item-desc font-body-sm text-body-sm text-[#584140] italic mt-2.5 leading-relaxed block">Velvety parmesan and roasted garlic cream sauce tossed with penne or fettuccine, fresh parsley, and cracked black pepper</p>
+</div>
+</div>
+</div>
+<!-- Category 3: Appetizers & Sides -->
+<div class="w-full menu-category-section transition-opacity duration-300" data-category="appetizers">
+<div class="flex items-center gap-3 pb-2.5 mb-6 border-b border-[#8c1d24]/20 menu-category-header">
+<span class="material-symbols-outlined text-[18px] text-[#8c1d24]">tapas</span>
+<h3 class="font-headline-sm text-headline-sm text-[#8c1d24] tracking-wide font-medium">Appetizers &amp; Sides</h3>
+</div>
+<div class="flex flex-col gap-4">
+<div class="menu-item-card bg-[#ffffff] border border-[#8c1d24]/20 p-5 md:p-6 rounded-sm shadow-[0_2px_8px_rgba(140,29,36,0.04)] hover:border-[#8c1d24]/50 transition-all hover:shadow-[0_4px_16px_rgba(140,29,36,0.08)] flex flex-col">
+<div class="flex items-baseline justify-between gap-4">
+<span class="menu-item-title font-headline-sm text-headline-sm text-[#8c1d24] tracking-wide font-medium leading-tight">Chicken Popcorn</span>
+</div>
+<p class="menu-item-desc font-body-sm text-body-sm text-[#584140] italic mt-2.5 leading-relaxed block">Bite-sized tender chicken breast pieces in seasoned golden panko crust, served with spiced emulsion dip</p>
+</div>
+<div class="menu-item-card bg-[#ffffff] border border-[#8c1d24]/20 p-5 md:p-6 rounded-sm shadow-[0_2px_8px_rgba(140,29,36,0.04)] hover:border-[#8c1d24]/50 transition-all hover:shadow-[0_4px_16px_rgba(140,29,36,0.08)] flex flex-col">
+<div class="flex items-baseline justify-between gap-4">
+<span class="menu-item-title font-headline-sm text-headline-sm text-[#8c1d24] tracking-wide font-medium leading-tight">Peri Peri French Fries / Loaded Fries</span>
+</div>
+<p class="menu-item-desc font-body-sm text-body-sm text-[#584140] italic mt-2.5 leading-relaxed block">Hand-cut crisp potato batons tossed in zesty peri-peri spices, available with melted cheese drizzle and house toppings</p>
+</div>
+</div>
+</div>
+<!-- Category 4: Brunch & Sweet Treats -->
+<div class="w-full menu-category-section transition-opacity duration-300" data-category="sweets">
+<div class="flex items-center gap-3 pb-2.5 mb-6 border-b border-[#8c1d24]/20 menu-category-header">
+<span class="material-symbols-outlined text-[18px] text-[#8c1d24]">bakery_dining</span>
+<h3 class="font-headline-sm text-headline-sm text-[#8c1d24] tracking-wide font-medium">Brunch &amp; Sweet Treats</h3>
+</div>
+<div class="flex flex-col gap-4">
+<div class="menu-item-card bg-[#ffffff] border border-[#8c1d24]/20 p-5 md:p-6 rounded-sm shadow-[0_2px_8px_rgba(140,29,36,0.04)] hover:border-[#8c1d24]/50 transition-all hover:shadow-[0_4px_16px_rgba(140,29,36,0.08)] flex flex-col">
+<div class="flex items-baseline justify-between gap-4">
+<span class="menu-item-title font-headline-sm text-headline-sm text-[#8c1d24] tracking-wide font-medium leading-tight">Nutella French Toast</span>
+</div>
+<p class="menu-item-desc font-body-sm text-body-sm text-[#584140] italic mt-2.5 leading-relaxed block">Brioche soaked in spiced custard, griddled in golden butter, slathered with rich Nutella; including fresh Strawberry French Toast variations</p>
+</div>
+<div class="menu-item-card bg-[#ffffff] border border-[#8c1d24]/20 p-5 md:p-6 rounded-sm shadow-[0_2px_8px_rgba(140,29,36,0.04)] hover:border-[#8c1d24]/50 transition-all hover:shadow-[0_4px_16px_rgba(140,29,36,0.08)] flex flex-col">
+<div class="flex items-baseline justify-between gap-4">
+<span class="menu-item-title font-headline-sm text-headline-sm text-[#8c1d24] tracking-wide font-medium leading-tight">Berry Yogurt Bowl</span>
+</div>
+<p class="menu-item-desc font-body-sm text-body-sm text-[#584140] italic mt-2.5 leading-relaxed block">Chilled whipped Greek yogurt topped with macerated wild berries, organic honey, and toasted seed granola</p>
+</div>
+<div class="menu-item-card bg-[#ffffff] border border-[#8c1d24]/20 p-5 md:p-6 rounded-sm shadow-[0_2px_8px_rgba(140,29,36,0.04)] hover:border-[#8c1d24]/50 transition-all hover:shadow-[0_4px_16px_rgba(140,29,36,0.08)] flex flex-col">
+<div class="flex items-baseline justify-between gap-4">
+<span class="menu-item-title font-headline-sm text-headline-sm text-[#8c1d24] tracking-wide font-medium leading-tight">Sticky Toffee Pudding</span>
+</div>
+<p class="menu-item-desc font-body-sm text-body-sm text-[#584140] italic mt-2.5 leading-relaxed block">British-inspired moist date sponge cake drenched in warm salted toffee caramel sauce, served with artisanal vanilla bean ice cream</p>
+</div>
+<div class="menu-item-card bg-[#ffffff] border border-[#8c1d24]/20 p-5 md:p-6 rounded-sm shadow-[0_2px_8px_rgba(140,29,36,0.04)] hover:border-[#8c1d24]/50 transition-all hover:shadow-[0_4px_16px_rgba(140,29,36,0.08)] flex flex-col">
+<div class="flex items-baseline justify-between gap-4">
+<span class="menu-item-title font-headline-sm text-headline-sm text-[#8c1d24] tracking-wide font-medium leading-tight">Sea Salt Mont Blanc</span>
+</div>
+<p class="menu-item-desc font-body-sm text-body-sm text-[#584140] italic mt-2.5 leading-relaxed block">Delicate sweet chestnut purée vermicelli piped over light meringue and vanilla chantilly, finished with flaky sea salt</p>
+</div>
+</div>
+</div>
+<!-- Empty State Feedback when Search matches nothing -->
+<div class="hidden w-full py-12 px-6 bg-[#ffffff] border border-[#8c1d24]/20 rounded-sm text-center shadow-[0_2px_8px_rgba(140,29,36,0.04)]" id="menuEmptyState">
+<div class="w-12 h-12 rounded-full bg-[#f0eee7] text-[#8c1d24] border border-[#8c1d24]/20 flex items-center justify-center mx-auto mb-3">
+<span class="material-symbols-outlined text-[22px]">search_off</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-[#8c1d24] font-medium mb-1.5">No delicacies found</h4>
+<p class="font-body-sm text-body-sm text-[#584140] italic max-w-sm mx-auto mb-5 leading-relaxed">
+    No delicacies found matching your search. Try searching for cinnamon, pizza, brioche, or coffee.
+  </p>
+<button class="inline-flex items-center gap-2 px-5 py-2 bg-[#8c1d24] text-[#ffffff] hover:bg-[#6b0110] rounded-sm font-label-md text-xs uppercase tracking-[0.16em] transition-colors cursor-pointer shadow-xs" id="resetSearchEmptyBtn" type="button">
+<span class="material-symbols-outlined text-[14px]">refresh</span>
+<span>Clear Search</span>
+</button>
+</div>
+</div>
+</section>
+<!-- SECTION 3.5: EDITORIAL INSTAGRAM FEED SECTION -->
+<section class="w-full flex flex-col items-center mb-24">
+<div class="w-full flex items-center justify-center gap-4 mb-3">
+<div class="h-[1px] bg-[#8c1d24]/20 flex-1"></div>
+<span class="text-[#8c1d24] text-xs tracking-widest select-none">✦ ❦ ✦</span>
+<div class="h-[1px] bg-[#8c1d24]/20 flex-1"></div>
+</div>
+<div class="text-center mb-8">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.25em] text-[#7a5826] font-semibold block mb-1.5">FOLIO D’IMAGES · INSTAGRAM</span>
+<h2 class="font-headline-md text-headline-md text-[#8c1d24] tracking-wide font-normal">Moments at Lorella</h2>
+<p class="font-body-sm text-body-sm text-[#584140] italic mt-1 max-w-md mx-auto mb-4">A visual journal of quiet corners, slow-brewed roasts, and morning confectionery.</p>
+<a class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#8c1d24]/10 hover:bg-[#8c1d24] text-[#8c1d24] hover:text-[#ffffff] border border-[#8c1d24]/30 hover:border-[#8c1d24] transition-all duration-300 font-label-md text-xs uppercase tracking-[0.18em] shadow-xs group" href="https://www.instagram.com/lorella.india" rel="noopener noreferrer" target="_blank">
+<svg class="w-3.5 h-3.5 fill-current transition-transform group-hover:scale-110" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+<span>@lorella.india</span>
+<span class="text-[10px] tracking-normal font-normal opacity-75">• Follow Our Visual Diary on Instagram →</span>
+</a>
+</div>
+<!-- 4-Column Photo Grid -->
+<div class="w-full grid grid-cols-2 md:grid-cols-4 gap-3.5">
+<!-- Photo 1: Viennese latte art coffee with vintage poetry book on marble -->
+<a class="group relative aspect-square rounded-sm overflow-hidden border border-[#8c1d24]/20 shadow-[0_2px_8px_rgba(140,29,36,0.06)] block bg-[#f0eee7]" href="https://www.instagram.com/lorella.india" rel="noopener noreferrer" target="_blank" title="Viennese Coffee &amp; Poetry — View on Instagram">
+<img alt="Viennese latte art coffee in porcelain cup on marble table with poetry book" class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-108" loading="lazy" src="https://lh3.googleusercontent.com/aida/ALJJyrAiiCk8sZmU2LYPjSJ-zVpYYcGCGqNMTCFqBWWoaL7XS_fLWdhYdsyWAJmg494tTmeTQEImqGf5USZehHsjOoNiqwpIG3GexlRs5lBsnnmWCfHudbvuVz7HTe0FhJs_hyVQbvW84c4hRSr0dDRzVAtFbb6D9dFQjfE9t_GMrXcF8F0nx0mZce3fsUGRiYHlVd14v45pNhf50Re6OM80UXUkKk28fIctpPytM7cMoZiu"/>
+<div class="absolute inset-0 bg-[#410006]/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-3 text-center">
+<svg class="w-6 h-6 text-[#ffffff] fill-current mb-1.5 transform -translate-y-1 group-hover:translate-y-0 transition-transform duration-300" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+<span class="text-[#ffffff] font-label-md text-[10px] uppercase tracking-[0.2em] font-semibold">Poetry &amp; Espresso</span>
+<span class="text-[#ffdad8] font-body-sm text-xs italic mt-0.5">@lorella.india</span>
+</div>
+</a>
+<!-- Photo 2: French pistachio cardamom tart & flaky pain au chocolat -->
+<a class="group relative aspect-square rounded-sm overflow-hidden border border-[#8c1d24]/20 shadow-[0_2px_8px_rgba(140,29,36,0.06)] block bg-[#f0eee7]" href="https://www.instagram.com/lorella.india" rel="noopener noreferrer" target="_blank" title="Pâtisserie du Jour — View on Instagram">
+<img alt="French pistachio cardamom tart and flaky pain au chocolat on ceramic plate" class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-108" loading="lazy" src="https://lh3.googleusercontent.com/aida/ALJJyrBZKV-9elyU2IqoehG90nQQhPT2pzBG6mMLoDul4PtASSWP4vuB10U-7zBVk6XZGF9_qV5rEABS2ZEHlkjTO2O1egryPuuef1bN2C-lp8kAWpL9tlp5gBTZIQnQnZq-fR4deaWDBFus665lhi4SJLP3sOwkoWXHgjbBU0fa7BynDwl61iyi2HOyN3YsLRTaRLL-Mbd946Q0akioyVKIid4eWVleL18QoN0i79Kt_7M"/>
+<div class="absolute inset-0 bg-[#410006]/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-3 text-center">
+<svg class="w-6 h-6 text-[#ffffff] fill-current mb-1.5 transform -translate-y-1 group-hover:translate-y-0 transition-transform duration-300" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+<span class="text-[#ffffff] font-label-md text-[10px] uppercase tracking-[0.2em] font-semibold">Fresh Viennoiserie</span>
+<span class="text-[#ffdad8] font-body-sm text-xs italic mt-0.5">@lorella.india</span>
+</div>
+</a>
+<!-- Photo 3: Cozy vintage Viennese coffeehouse salon interior -->
+<a class="group relative aspect-square rounded-sm overflow-hidden border border-[#8c1d24]/20 shadow-[0_2px_8px_rgba(140,29,36,0.06)] block bg-[#f0eee7]" href="https://www.instagram.com/lorella.india" rel="noopener noreferrer" target="_blank" title="The Parlour Salon — View on Instagram">
+<img alt="Cozy vintage Viennese coffeehouse salon interior with wood panelling and warm lighting" class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-108" loading="lazy" src="https://lh3.googleusercontent.com/aida/ALJJyrBPaL4mABRX-27WrVkBwJOu_vHEkHcYZRAF4FsaeQplKFIxKLYChkpLAAaNjphxEsBros7MH3LqOX1KRJNuhtZcJsx0WSwvQZAHBdAfQUj0ZBfHfuV5BDZ_moxMA47PWpE7au6wIrBPro1kahlmV6HKS0bjfYohegzolfkK28HfHfMqHu7-KOtxYxNh0vBzN7x-ghDi2Tnoo502_r4NmXQ9QqXmim51w8_0UxiJZBrX"/>
+<div class="absolute inset-0 bg-[#410006]/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-3 text-center">
+<svg class="w-6 h-6 text-[#ffffff] fill-current mb-1.5 transform -translate-y-1 group-hover:translate-y-0 transition-transform duration-300" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+<span class="text-[#ffffff] font-label-md text-[10px] uppercase tracking-[0.2em] font-semibold">The Salon Atmosphere</span>
+<span class="text-[#ffdad8] font-body-sm text-xs italic mt-0.5">@lorella.india</span>
+</div>
+</a>
+<!-- Photo 4: Barista pouring single-origin pour-over coffee -->
+<a class="group relative aspect-square rounded-sm overflow-hidden border border-[#8c1d24]/20 shadow-[0_2px_8px_rgba(140,29,36,0.06)] block bg-[#f0eee7]" href="https://www.instagram.com/lorella.india" rel="noopener noreferrer" target="_blank" title="Single-Origin Reserve Pour-Over — View on Instagram">
+<img alt="Barista pouring artisanal single-origin pour-over coffee through glass dripper" class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-108" loading="lazy" src="https://lh3.googleusercontent.com/aida/ALJJyrCgFDeu_ddPFSYCqirFCWWWKzcXnx7GWXPd75zD4Sy0t5tMQwboTApesWR55XXS3BWStaQW7sAulzHERqly_iUJzAZ_wypGRWVG3FAYDDjdKcwc3oqmvsaOA8tD2B-ANT-ny8FLomeat8CfH231B4ONFhUeiWqH3Mz-_pWrF5PI4QTuyu_Q-Ou7dJOBg-qyrew-j3Ls47uLCnZTM36AijsqKPdH6Q6Jnm1WfmevmzI"/>
+<div class="absolute inset-0 bg-[#410006]/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-3 text-center">
+<svg class="w-6 h-6 text-[#ffffff] fill-current mb-1.5 transform -translate-y-1 group-hover:translate-y-0 transition-transform duration-300" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+<span class="text-[#ffffff] font-label-md text-[10px] uppercase tracking-[0.2em] font-semibold">Pour-Over Craft</span>
+<span class="text-[#ffdad8] font-body-sm text-xs italic mt-0.5">@lorella.india</span>
+</div>
+</a>
+</div>
+</section>
+<!-- SECTION 4: FOOTER / DETAILS -->
+<section class="w-full flex flex-col items-center">
+<div class="w-full bg-[#f6f3ec] border border-[#8c1d24]/25 p-8 md:p-11 rounded-sm shadow-sm flex flex-col items-center text-center">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.24em] text-[#8c1d24] mb-4 font-semibold">
+          Salon • Hours • Contact
+        </span>
+<p class="font-body-md text-body-md text-[#1c1c18] max-w-md leading-relaxed mb-3">
+          Plot 310, Bhagayath, HMDA, Uppal,<br/>Hyderabad, Telangana 500039
+        </p>
+<p class="font-label-sm text-label-sm uppercase tracking-[0.18em] text-[#7a5826] mb-3 font-semibold">
+          Monday – Sunday  •  8:00 AM – 11:00 PM
+        </p>
+<a class="font-body-md text-body-md text-[#8c1d24] hover:text-[#6b0110] transition-colors underline decoration-[#8c1d24]/40 underline-offset-4 font-medium" href="tel:09912222036">
+          099122 22036
+        </a>
+<!-- Inline Reservation Action Prompt -->
+<div class="mt-8 pt-7 w-full border-t border-[#8c1d24]/20 flex flex-col items-center">
+<div class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-[#8c1d24] mb-2.5 font-semibold">
+    Table Service &amp; Hosting
+  </div>
+<p class="font-body-sm text-body-sm text-[#584140] italic max-w-sm mb-6">
+    Direct Salon Booking: <a class="underline decoration-[#8c1d24]/50 hover:text-[#8c1d24] text-[#1c1c18] not-italic font-semibold transition-colors" href="tel:09912222036">099122 22036</a> · Walk-ins welcomed, advance reservations cherished.
+  </p>
+<button class="inline-flex items-center gap-2.5 px-7 py-3 bg-[#8c1d24] text-[#ffffff] hover:bg-[#6b0110] border border-[#8c1d24] rounded-sm font-label-md text-label-md font-semibold uppercase tracking-[0.18em] transition-all shadow-[0_2px_8px_rgba(140,29,36,0.18)] hover:shadow-[0_4px_12px_rgba(140,29,36,0.25)] cursor-pointer" id="openReservationInlineBtn" type="button">
+<span class="material-symbols-outlined text-[16px] text-white">table_restaurant</span>
+<span>Reserve a Table</span>
+</button>
+</div>
+<div class="mt-8 pt-6 w-full flex items-center justify-center gap-3 text-[#8c1d24]/70 text-xs">
+<span>—</span>
+<span class="font-label-sm text-label-sm tracking-[0.2em] uppercase text-[#7a5826] font-semibold">The Art of Living</span>
+<span>—</span>
+</div>
+</div>
+</section>
+</div>
+</div></main>
+<!-- RESERVATION MODAL DIALOG -->
+<div aria-labelledby="modalTitle" aria-modal="true" class="fixed inset-0 z-50 hidden items-center justify-center p-4 sm:p-6 overflow-y-auto" id="reservationModal" role="dialog">
+<!-- Backdrop -->
+<div class="fixed inset-0 bg-[#1c1c18]/60 backdrop-blur-xs transition-opacity opacity-0 duration-300" id="modalBackdrop"></div>
+<!-- Modal Paper Container -->
+<div class="relative z-10 w-full max-w-lg bg-[#ffffff] border border-[#8c1d24]/30 rounded-sm shadow-2xl p-6 sm:p-8 transform scale-95 opacity-0 transition-all duration-300 my-8 text-[#1c1c18]" id="modalDialogBox">
+<!-- Close Button -->
+<button aria-label="Close dialog" class="absolute top-5 right-5 text-[#8b716f] hover:text-[#8c1d24] transition-colors p-1.5 rounded-full hover:bg-[#f6f3ec]" id="closeReservationBtn" type="button">
+<span class="material-symbols-outlined text-[22px]">close</span>
+</button>
+<!-- Header Content -->
+<div class="text-center mb-6 pt-1">
+<div class="text-[#8c1d24] text-xs tracking-widest mb-1.5 select-none">✦ ❦ ✦</div>
+<h3 class="font-headline-md text-headline-md text-[#8c1d24] tracking-wide font-medium" id="modalTitle">
+        Reserve a Table
+      </h3>
+<p class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-[#7a5826] mt-1 font-semibold">
+        Lorella Speciality Café • Uppal
+      </p>
+</div>
+<!-- Direct Call Prompt Banner -->
+<div class="bg-[#fcf9f2] border border-[#8c1d24]/25 rounded-sm p-3.5 mb-6 text-center">
+<p class="font-body-sm text-body-sm text-[#584140] leading-relaxed">
+        For immediate seating or parties over four, telephone our salon master directly at
+        <a class="font-semibold text-[#8c1d24] hover:underline whitespace-nowrap" href="tel:09912222036">099122 22036</a>.
+      </p>
+</div>
+<!-- Reservation Form -->
+<form class="space-y-4 text-left" id="reservationForm">
+<!-- Date & Service Time Row -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block font-label-sm text-label-sm uppercase tracking-[0.16em] text-[#8c1d24] mb-1.5 font-semibold" for="resDate">
+            Date of Visit
+          </label>
+<input class="w-full bg-[#fcf9f2] border border-[#8c1d24]/30 rounded-sm px-3 py-2 text-[#1c1c18] font-body-sm focus:border-[#8c1d24] focus:ring-1 focus:ring-[#8c1d24] outline-none transition-colors" id="resDate" min="2026-11-10" required="" type="date"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm uppercase tracking-[0.16em] text-[#8c1d24] mb-1.5 font-semibold" for="resTime">
+            Service &amp; Time
+          </label>
+<select class="w-full bg-[#fcf9f2] border border-[#8c1d24]/30 rounded-sm px-3 py-2 text-[#1c1c18] font-body-sm focus:border-[#8c1d24] focus:ring-1 focus:ring-[#8c1d24] outline-none transition-colors" id="resTime" required="">
+<option class="bg-white text-[#1c1c18]" value="Morning (09:00)">Morning · 09:00 AM</option>
+<option class="bg-white text-[#1c1c18]" value="Late Morning (10:30)">Late Morning · 10:30 AM</option>
+<option class="bg-white text-[#1c1c18]" selected="" value="Midday Luncheon (12:30)">Midday Luncheon · 12:30 PM</option>
+<option class="bg-white text-[#1c1c18]" value="Afternoon Tea (16:00)">Afternoon Tea · 4:00 PM</option>
+<option class="bg-white text-[#1c1c18]" value="Twilight (18:00)">Twilight · 6:00 PM</option>
+<option class="bg-white text-[#1c1c18]" value="Evening Salon (19:30)">Evening Salon · 7:30 PM</option>
+<option class="bg-white text-[#1c1c18]" value="Nocturne (21:00)">Nocturne · 9:00 PM</option>
+</select>
+</div>
+</div>
+<!-- Guests -->
+<div>
+<label class="block font-label-sm text-label-sm uppercase tracking-[0.16em] text-[#8c1d24] mb-1.5 font-semibold" for="resGuests">
+          Number of Guests
+        </label>
+<select class="w-full bg-[#fcf9f2] border border-[#8c1d24]/30 rounded-sm px-3 py-2 text-[#1c1c18] font-body-sm focus:border-[#8c1d24] focus:ring-1 focus:ring-[#8c1d24] outline-none transition-colors" id="resGuests">
+<option class="bg-white text-[#1c1c18]" value="1">1 Guest (Solo Reader / Salon Tête-à-tête)</option>
+<option class="bg-white text-[#1c1c18]" selected="" value="2">2 Guests (Intimate Table)</option>
+<option class="bg-white text-[#1c1c18]" value="3">3 Guests</option>
+<option class="bg-white text-[#1c1c18]" value="4">4 Guests (Salon Parlour Table)</option>
+<option class="bg-white text-[#1c1c18]" value="5+">5 to 6 Guests (Literary Circle Table)</option>
+</select>
+</div>
+<!-- Guest Name & Telephone -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block font-label-sm text-label-sm uppercase tracking-[0.16em] text-[#8c1d24] mb-1.5 font-semibold" for="resName">
+            Full Name
+          </label>
+<input class="w-full bg-[#fcf9f2] border border-[#8c1d24]/30 rounded-sm px-3 py-2 text-[#1c1c18] font-body-sm focus:border-[#8c1d24] focus:ring-1 focus:ring-[#8c1d24] outline-none transition-colors placeholder:text-[#8b716f]/60" id="resName" placeholder="E.g., Julien Gracq" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm uppercase tracking-[0.16em] text-[#8c1d24] mb-1.5 font-semibold" for="resPhone">
+            Telephone
+          </label>
+<input class="w-full bg-[#fcf9f2] border border-[#8c1d24]/30 rounded-sm px-3 py-2 text-[#1c1c18] font-body-sm focus:border-[#8c1d24] focus:ring-1 focus:ring-[#8c1d24] outline-none transition-colors placeholder:text-[#8b716f]/60" id="resPhone" placeholder="099122 22036" required="" type="tel"/>
+</div>
+</div>
+<!-- Discreet Notes -->
+<div>
+<label class="block font-label-sm text-label-sm uppercase tracking-[0.16em] text-[#8c1d24] mb-1.5 font-semibold" for="resNotes">
+          Seating Preference (Optional)
+        </label>
+<input class="w-full bg-[#fcf9f2] border border-[#8c1d24]/30 rounded-sm px-3 py-2 text-[#1c1c18] font-body-sm focus:border-[#8c1d24] focus:ring-1 focus:ring-[#8c1d24] outline-none transition-colors placeholder:text-[#8b716f]/60" id="resNotes" placeholder="E.g., Quiet window corner, book discussion..." type="text"/>
+</div>
+<!-- Submit CTA -->
+<div class="pt-3">
+<button class="w-full py-3 bg-[#8c1d24] text-[#ffffff] hover:bg-[#6b0110] font-semibold transition-all rounded-sm font-label-md text-label-md uppercase tracking-[0.2em] shadow-sm flex items-center justify-center gap-2 cursor-pointer border border-[#8c1d24]" type="submit">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Confirm Reservation</span>
+</button>
+</div>
+<div class="text-center pt-2">
+<span class="font-body-sm text-body-sm text-[#584140] italic text-xs">
+          An email &amp; SMS voucher will be dispatched upon salon approval.
+        </span>
+</div>
+</form>
+<!-- Success Confirmation State (Hidden by default) -->
+<div class="hidden text-center py-6" id="reservationSuccess">
+<div class="w-12 h-12 rounded-full bg-[#ffdad8] text-[#8c1d24] flex items-center justify-center mx-auto mb-4 border border-[#8c1d24]/30">
+<span class="material-symbols-outlined text-[24px]">bookmark_heart</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-[#8c1d24] mb-2 font-medium">
+        Your table is reserved with grace
+      </h4>
+<p class="font-body-md text-body-md text-[#584140] italic max-w-sm mx-auto mb-5 leading-relaxed" id="confirmationSummary">
+        We look forward to welcoming you to the salon. A maître d' will confirm your arrangement shortly.
+      </p>
+<div class="font-label-sm text-label-sm uppercase tracking-[0.18em] text-[#7a5826] mb-6 font-semibold">
+        Salon Master Direct: 099122 22036
+      </div>
+<button class="px-6 py-2.5 bg-[#8c1d24] text-[#ffffff] hover:bg-[#6b0110] rounded-sm font-label-md text-label-md font-semibold uppercase tracking-[0.16em] transition-colors cursor-pointer" id="closeSuccessBtn" type="button">
+        Close
+      </button>
+</div>
+</div>
+</div>
+<footer class="w-full bg-[#f6f3ec] border-t border-[#8c1d24]/20"><div class="max-w-[1200px] mx-auto px-6 md:px-12 py-16"><div class="text-center mb-8"><div class="font-body-md text-body-md italic text-[#8c1d24] mb-2">— ❦ —</div><p class="font-headline-sm text-headline-sm text-[#8c1d24] tracking-wide font-medium">Lorella Speciality Café</p><p class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-[#7a5826] mt-1 font-semibold">Vienna • Paris • Prague</p><div class="mt-4"><a class="inline-flex items-center gap-1.5 font-label-sm text-label-sm uppercase tracking-[0.2em] text-[#8c1d24] hover:text-[#6b0110] font-semibold transition-colors" href="https://www.instagram.com/lorella.india" rel="noopener noreferrer" target="_blank"><svg class="w-3.5 h-3.5 fill-current" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg><span>Follow us @lorella.india</span></a></div></div><div class="border-t border-[#8c1d24]/20 pt-8 flex flex-col md:flex-row items-center justify-between text-[#584140]"><p class="font-label-sm text-label-sm tracking-wider">© MCMXXIV • MMXXIV Lorella Editions &amp; Roastery. All rights reserved.</p><div class="flex items-center gap-6 mt-4 md:mt-0"><a class="font-label-sm text-label-sm tracking-widest uppercase text-[#8c1d24] hover:text-[#6b0110] font-medium transition-colors" href="https://www.instagram.com/lorella.india" rel="noopener noreferrer" target="_blank">@lorella.india</a><span class="text-[#8c1d24]/40">•</span><span class="font-label-sm text-label-sm tracking-widest uppercase text-[#8c1d24] font-medium">Vellum &amp; Espresso</span><span class="text-[#8c1d24]/40">•</span><span class="font-label-sm text-label-sm tracking-widest uppercase text-[#8c1d24] font-medium">Table d'Hôte</span></div></div></div></footer>
+<script>
+  (function initMenuFilterAndSearch() {
+    const filterTabs = document.querySelectorAll('.menu-filter-tab');
+    const sections = document.querySelectorAll('.menu-category-section');
+    const searchInput = document.getElementById('menuSearchInput');
+    const clearBtn = document.getElementById('clearSearchBtn');
+    const emptyState = document.getElementById('menuEmptyState');
+    const resetEmptyBtn = document.getElementById('resetSearchEmptyBtn');
+
+    let currentCategory = 'all';
+    let searchQuery = '';
+
+    function applyFilters() {
+      const q = searchQuery.trim().toLowerCase();
+      let totalVisibleItems = 0;
+
+      sections.forEach((sec) => {
+        const cat = sec.getAttribute('data-category');
+        const categoryMatches = (currentCategory === 'all' || cat === currentCategory);
+
+        if (!categoryMatches) {
+          sec.style.display = 'none';
+          sec.style.opacity = '0';
+          return;
+        }
+
+        const items = sec.querySelectorAll('.menu-item-card');
+        let visibleInSection = 0;
+
+        items.forEach((item) => {
+          const title = (item.querySelector('.menu-item-title')?.textContent || '').toLowerCase();
+          const desc = (item.querySelector('.menu-item-desc')?.textContent || '').toLowerCase();
+          const matchesSearch = !q || title.includes(q) || desc.includes(q);
+
+          if (matchesSearch) {
+            item.style.display = 'flex';
+            visibleInSection++;
+          } else {
+            item.style.display = 'none';
+          }
+        });
+
+        // Hide section completely if no items match search query
+        if (visibleInSection > 0) {
+          sec.style.display = 'block';
+          sec.style.opacity = '1';
+          totalVisibleItems += visibleInSection;
+        } else {
+          sec.style.display = 'none';
+          sec.style.opacity = '0';
+        }
+      });
+
+      // Toggle Empty State message
+      if (totalVisibleItems === 0) {
+        if (emptyState) emptyState.classList.remove('hidden');
+      } else {
+        if (emptyState) emptyState.classList.add('hidden');
+      }
+
+      // Show or hide clear button
+      if (clearBtn) {
+        if (q.length > 0) {
+          clearBtn.classList.remove('hidden');
+        } else {
+          clearBtn.classList.add('hidden');
+        }
+      }
+    }
+
+    // Category tab interactions
+    filterTabs.forEach((tab) => {
+      tab.addEventListener('click', () => {
+        currentCategory = tab.getAttribute('data-filter') || 'all';
+
+        // Update tab styles
+        filterTabs.forEach((t) => {
+          t.setAttribute('aria-selected', 'false');
+          t.classList.remove('bg-[#8c1d24]', 'text-[#ffffff]', 'shadow-sm');
+          t.classList.add('text-[#584140]');
+        });
+
+        tab.setAttribute('aria-selected', 'true');
+        tab.classList.remove('text-[#584140]');
+        tab.classList.add('bg-[#8c1d24]', 'text-[#ffffff]', 'shadow-sm');
+
+        applyFilters();
+      });
+    });
+
+    // Real-time keyword search input
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        searchQuery = e.target.value;
+        applyFilters();
+      });
+    }
+
+    // Clear search handler
+    function clearSearch() {
+      if (searchInput) {
+        searchInput.value = '';
+        searchInput.focus();
+      }
+      searchQuery = '';
+      applyFilters();
+    }
+
+    if (clearBtn) {
+      clearBtn.addEventListener('click', clearSearch);
+    }
+
+    if (resetEmptyBtn) {
+      resetEmptyBtn.addEventListener('click', () => {
+        clearSearch();
+        // Also reset filter tab to All if empty
+        const allTab = document.querySelector('.menu-filter-tab[data-filter="all"]');
+        if (allTab) allTab.click();
+      });
+    }
+  })();
+
+  (function initReservationModal() {
+    const modal = document.getElementById('reservationModal');
+    const backdrop = document.getElementById('modalBackdrop');
+    const dialogBox = document.getElementById('modalDialogBox');
+    const navBtn = document.getElementById('openReservationNavBtn');
+    const inlineBtn = document.getElementById('openReservationInlineBtn');
+    const closeBtn = document.getElementById('closeReservationBtn');
+    const closeSuccessBtn = document.getElementById('closeSuccessBtn');
+    const form = document.getElementById('reservationForm');
+    const successCard = document.getElementById('reservationSuccess');
+    const dateInput = document.getElementById('resDate');
+
+    // Default today's date
+    if (dateInput) {
+      const today = new Date().toISOString().split('T')[0];
+      dateInput.value = today;
+      dateInput.min = today;
+    }
+
+    function openModal() {
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      // Animation timing
+      requestAnimationFrame(() => {
+        backdrop.classList.remove('opacity-0');
+        backdrop.classList.add('opacity-100');
+        dialogBox.classList.remove('scale-95', 'opacity-0');
+        dialogBox.classList.add('scale-100', 'opacity-100');
+      });
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      backdrop.classList.remove('opacity-100');
+      backdrop.classList.add('opacity-0');
+      dialogBox.classList.remove('scale-100', 'opacity-100');
+      dialogBox.classList.add('scale-95', 'opacity-0');
+      setTimeout(() => {
+        modal.classList.remove('flex');
+        modal.classList.add('hidden');
+        document.body.style.overflow = '';
+        // Reset states
+        if (form && successCard) {
+          form.classList.remove('hidden');
+          successCard.classList.add('hidden');
+        }
+      }, 300);
+    }
+
+    if (navBtn) navBtn.addEventListener('click', openModal);
+    if (inlineBtn) inlineBtn.addEventListener('click', openModal);
+    if (closeBtn) closeBtn.addEventListener('click', closeModal);
+    if (closeSuccessBtn) closeSuccessBtn.addEventListener('click', closeModal);
+    if (backdrop) backdrop.addEventListener('click', closeModal);
+
+    // Escape key
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+        closeModal();
+      }
+    });
+
+    // Form submission
+    if (form) {
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const guestName = document.getElementById('resName').value || 'Honored Guest';
+        const serviceTime = document.getElementById('resTime').value;
+        const guests = document.getElementById('resGuests').value;
+
+        const summary = document.getElementById('confirmationSummary');
+        if (summary) {
+          summary.textContent = `Dear ${guestName}, we have noted your reservation for ${guests} guest(s) during our ${serviceTime} service. Lorella awaits your arrival.`;
+        }
+        form.classList.add('hidden');
+        successCard.classList.remove('hidden');
+      });
+    }
+  })();
+</script>
+</body></html>

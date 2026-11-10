@@ -1,0 +1,14 @@
+# Local dev server (not needed on GitHub Pages)
+serve.js
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor dirs
+.vscode/
+.idea/
+
+# Logs
+*.log
